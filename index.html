@@ -3,250 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Tardigrade</title>
 
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root{
-    --primary:#5b5ff7;
-    --secondary:#7c4dff;
-    --bg:#f8fafc;
-    --text:#1e293b;
-    --card:#ffffff;
-    --border:#e2e8f0;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Inter',sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.6;
-}
-
-.container{
-    width:min(1200px,90%);
-    margin:auto;
-}
-
-/* HEADER */
-header{
-    background:white;
-    position:sticky;
-    top:0;
-    z-index:100;
-    border-bottom:1px solid var(--border);
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:1rem 0;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
-
-.logo img{
-    width:45px;
-    height:45px;
-    border-radius:12px;
-    object-fit:cover;
-}
-
-.logo h2{
-    font-size:1.3rem;
-    letter-spacing:0.3px;
-}
-
-.nav-links{
-    display:flex;
-    gap:2rem;
-    list-style:none;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:var(--text);
-    font-weight:500;
-}
-
-.nav-links a:hover{
-    color:var(--primary);
-}
-
-/* HERO */
-.hero{
-    padding:6rem 0;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:3rem;
-    margin-bottom:1rem;
-}
-
-.hero p{
-    max-width:700px;
-    margin:auto;
-    color:#64748b;
-    margin-bottom:2rem;
-}
-
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    gap:1rem;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:14px 24px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn-primary{
-    background:var(--primary);
-    color:white;
-}
-
-.btn-primary:hover{
-    opacity:.9;
-}
-
-.btn-secondary{
-    border:1px solid var(--border);
-    color:var(--text);
-    background:white;
-}
-
-/* SECTIONS */
-section{
-    padding:5rem 0;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:3rem;
-}
-
-.section-title h2{
-    font-size:2rem;
-    margin-bottom:.5rem;
-}
-
-.section-title p{
-    color:#64748b;
-}
-
-/* CARDS */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:1.5rem;
-}
-
-.card{
-    background:var(--card);
-    padding:1.5rem;
-    border-radius:20px;
-    border:1px solid var(--border);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-}
-
-/* FAQ */
-.faq-item{
-    background:white;
-    border:1px solid var(--border);
-    border-radius:16px;
-    margin-bottom:1rem;
-    overflow:hidden;
-}
-
-.faq-question{
-    padding:1rem 1.5rem;
-    font-weight:600;
-}
-
-.faq-answer{
-    padding:0 1.5rem 1rem;
-    color:#64748b;
-}
-
-/* CONTACT */
-.contact-box{
-    background:white;
-    padding:2rem;
-    border-radius:20px;
-    border:1px solid var(--border);
-    text-align:center;
-}
-
-form{
-    display:grid;
-    gap:1rem;
-    margin-top:1.5rem;
-}
-
-input, textarea{
-    padding:14px;
-    border-radius:12px;
-    border:1px solid var(--border);
-    font-family:inherit;
-}
-
-textarea{
-    min-height:120px;
-    resize:vertical;
-}
-
-button{
-    background:var(--primary);
-    color:white;
-    border:none;
-    padding:14px;
-    border-radius:12px;
-    cursor:pointer;
-    font-weight:600;
-}
-
-/* FOOTER */
-footer{
-    background:#0f172a;
-    color:white;
-    padding:2rem 0;
-    text-align:center;
-}
-
-/* MOBILE */
-@media(max-width:900px){
-    .nav-links{
-        display:none;
-    }
-
-    .hero h1{
-        font-size:2.2rem;
-    }
-}
-</style>
 </head>
 
 <body>
@@ -256,17 +20,17 @@ footer{
         <nav>
 
             <div class="logo">
-                <img src="tardigrade.jpg" alt="Tardigrade logo">
+                <img src="assets/tardigrade.jpg" alt="Tardigrade logo">
                 <h2>Tardigrade</h2>
             </div>
 
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Interviews</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="interviews.html">Interviews</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>
 
         </nav>
@@ -281,10 +45,10 @@ footer{
             A platform dedicated to accessibility, inclusion,
             mobility opportunities, life experiences, and resources
             for people with disabilities.
-			</p>
+        </p>
 
         <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Ask a Question</a>
+            <a href="#contact" class="btn btn-primary">Ask a Question</a>
         </div>
     </div>
 </section>
@@ -324,7 +88,7 @@ footer{
 
         <div class="section-title">
             <h2>Recent Articles</h2>
-            <p>Description for the section.</p>
+            <p>Insights and stories.</p>
         </div>
 
         <div class="grid">
@@ -349,7 +113,7 @@ footer{
     </div>
 </section>
 
-<section>
+<section id="about">
     <div class="container">
 
         <div class="section-title">
@@ -359,14 +123,16 @@ footer{
 
         <div class="card">
             <p>
-                Some description
+                Tardigrade is a platform focused on accessibility, inclusion,
+                Erasmus+ experiences, and sharing real stories of adaptation,
+                resilience, and community growth.
             </p>
         </div>
 
     </div>
 </section>
 
-<section>
+<section id="faq">
     <div class="container">
 
         <div class="section-title">
@@ -382,16 +148,16 @@ footer{
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">Some question?</div>
+            <div class="faq-question">Who can contribute?</div>
             <div class="faq-answer">
-                Some answer.
+                Anyone interested in sharing stories, articles, or interview ideas.
             </div>
         </div>
 
     </div>
 </section>
 
-<section>
+<section id="contact">
     <div class="container">
 
         <div class="section-title">
@@ -418,6 +184,9 @@ footer{
         <p>© 2026 Tardigrade. All rights not yet reserved.</p>
     </div>
 </footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
 
 </body>
 </html>
